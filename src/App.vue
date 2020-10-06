@@ -1,31 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- App.vue根组件通常不做处理，放入router-view视图，嵌套加载其他的组件 -->
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 // import axios from 'axios'
-import jsonp from 'jsonp'
+// import jsonp from 'jsonp'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // HelloWorld
   },
   data(){
     return{
-      age:30
+      // age:30
     }
   },
   mounted(){
-    let url="/activity/servicetime";
-    jsonp(url,(err,res)=>{
-      let result=res;
-      this.data=result;
-    })
+    // let url="/activity/servicetime";
+    // jsonp(url,(err,res)=>{
+    //   let result=res;
+    //   this.data=result;
+    // })
   }
 }
 </script>
