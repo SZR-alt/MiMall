@@ -57,7 +57,6 @@ export default {
         this.$cookie.set('userId',res.id,{expires:'Session'});
         // this.$store.dispatch('saveUserName',res.username);
         this.saveUserName(res.username);
-        // this.$router.push('/index');
         this.$router.push({
           name:'index',
           params:{
